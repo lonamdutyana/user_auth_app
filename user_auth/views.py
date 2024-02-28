@@ -18,6 +18,10 @@ def index(request):
     Returns:
         Rendered HTML template for the index page.
     """
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0159f9ebaaecdbde88f816b4c817922f12295997
     return render(request, "user_auth/index.html")
 
 
@@ -87,6 +91,7 @@ def logout_user(request):
     """
     logout(request)
     return redirect('user_auth:login')
+
 # user_auth/views.py
 def login_user(request):
     """
