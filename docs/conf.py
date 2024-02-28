@@ -9,8 +9,9 @@ import os
 import sys
 import django
 sys.path.insert(0, os.path.abspath('..'))
-os.environ['DJANGO_SETTINGS_MODULE'] = 'user_auth.settings'
+os.environ['DJANGO_SETTINGS_MODULE'] = 'my_site.settings'
 django.setup()
+
 project = 'user_auth'
 copyright = '2024, Lona Mdutyana'
 author = 'Lona Mdutyana'
@@ -19,7 +20,7 @@ release = '28.02.2024'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ['sphinx.ext.autodoc','sphinx.ext.viewcode', 'sphinx.ext.napolean']
+extensions = ['sphinx.ext.autodoc', 'sphinx.ext.viewcode', 'sphinx.ext.napoleon']
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
