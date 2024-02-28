@@ -18,10 +18,6 @@ def index(request):
     Returns:
         Rendered HTML template for the index page.
     """
-<<<<<<< HEAD
-=======
-
->>>>>>> 0159f9ebaaecdbde88f816b4c817922f12295997
     return render(request, "user_auth/index.html")
 
 
