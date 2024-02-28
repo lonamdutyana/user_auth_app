@@ -10,6 +10,8 @@ Welcome to user_auth's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   modules
+
 
 
 Indices and tables
