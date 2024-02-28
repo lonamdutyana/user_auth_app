@@ -1,6 +1,6 @@
 # Use an official Python runtime as the base image
 FROM python:3.9-slim
-
+EXPOSE 8000
 # Set environment variables
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
@@ -16,7 +16,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . /app/
 
 # Collect static files
-RUN python manage.py
+# RUN python manage.py
 
 # Run the Django application
-# CMD [python manage.py ]
+CMD ["python", "./manage.py","runserver","0.0.0.0:8000"]
