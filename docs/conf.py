@@ -5,8 +5,13 @@
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
-
-project = 'user_auth'
+import os
+import sys
+import django
+sys.path.insert(0, os.path.abspath('..'))
+os.environ['DJANGO_SETTINGS_MODULE'] = 'my_site.settings'
+django.setup()
+project = 'my_site'
 copyright = '2024, Lona Mdutyana'
 author = 'Lona Mdutyana'
 release = '28.02.2024'
